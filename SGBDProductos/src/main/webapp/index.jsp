@@ -19,7 +19,7 @@
 
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">    </head>
     <body>
-        <nav class="navbar navbar-dark bg-dark fixed-top position-relative">
+                <nav class="navbar navbar-dark bg-dark fixed-top position-relative">
             <div class="container-fluid">
                 <a class="navbar-brand" href="./index.jsp">Sistemas de Gestión de Productos</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
@@ -84,21 +84,21 @@
                 <img src="https://images.unsplash.com/photo-1591337676887-a217a6970a8a?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">Tecnología</h5>
-                    <p class="card-text">Tenemos gran variedad de productos tecnologicos</p>
+                    <p class="card-text">En nuestra tienda, te ofrecemos una impresionante variedad de productos tecnológicos diseñados para satisfacer todas tus necesidades, ya sea en el hogar, la oficina o para el entretenimiento personal.</p>
                 </div>
             </div>
             <div class="card m-3 p-3" style="width: 18rem">
                 <img src="https://images.unsplash.com/photo-1521483451569-e33803c0330c?q=80&w=1985&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">Snacks</h5>
-                    <p class="card-text">Los productos que mas te gustan</p>
+                    <p class="card-text">Nos enorgullece ofrecer una diversidad de snacks que incluye opciones saludables, indulgentes y todo lo que hay en medio. Desde crujientes papas fritas y pretzels salados hasta barras de granola nutritivas y frutas deshidratadas, nuestra selección está diseñada para complacer todos los paladares.</p>
                 </div>
             </div>
             <div class="card m-3 p-3" style="width: 18rem">
                 <img src="https://images.unsplash.com/photo-1542838132-92c53300491e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8U1VQRVJNRVJDQURPfGVufDB8fDB8fHww" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">Frutas y Verduras</h5>
-                    <p class="card-text">Productos frescos para tu hogar</p>
+                    <p class="card-text">En nuestra tienda, nos especializamos en ofrecer una amplia variedad de frutas y verduras frescas de la mejor calidad para tu hogar. Cada producto es cuidadosamente seleccionado para garantizar su frescura y sabor, asegurando que tú y tu familia disfruten de los mejores ingredientes en cada comida.</p>
                 </div>
             </div>
         </div>
