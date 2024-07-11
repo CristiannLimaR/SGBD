@@ -1,3 +1,5 @@
+<%@page import="org.cristianlima.webapp.model.Producto"%>
+<%@page import="java.util.List"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -41,42 +43,25 @@
             <table class="table table-striped">
                 <body>
                 <thead>
+                <<th>#</th>
                 <th>Nombre</th>
                 <th>Marca</th>
                 <th>Descripcion</th>
                 <th>Precio</th>
                 </thead>
                 </body>
-                <tr>
-                    <td>Gaseosa</td>
-                    <td>Coca Cola</td>
-                    <td>Gaseosa azucarada </td>
-                    <td>22.00</td>
-                </tr>
-                <tr>
-                    <td>Cereal</td>
-                    <td>Choco Chiwi</td>
-                    <td>Cereal hecho con arroz y sabor a chocolate</td>
-                    <td>20.00</td>
-                </tr>
-                <tr>
-                    <td>Salami</td>
-                    <td>Santa Lucia</td>
-                    <td>Salami</td>
-                    <td>18.00</td>
-                </tr>
-                <tr>
-                    <td>Yogurt</td>
-                    <td>Lala</td>
-                    <td>Yogurt hecho a base de leche</td>
-                    <td>25.00</td>
-                </tr>
-                <tr>
-                    <td>Galleta</td>
-                    <td>Oreo</td>
-                    <td>Deliciosa galleta de chocolate con relleno cremoso</td>
-                    <td>23.00</td>
-                </tr>
+                <tbody>
+                    <% List<Producto> productos = (List)request.getAttribute("productos");%>
+                    <%for(Producto producto:productos){%>
+                    <tr>
+                        <th scope="row"><%=producto.getProductoId()%></th>
+                        <th scope="row"><%=producto.getNombreProducto()%></th>
+                        <th scope="row"><%=producto.getMarcaProducto()%></th>
+                        <th scope="row"><%=producto.getDescripcionProducto()%></th>
+                        <th scope="row"><%=producto.getPrecioProducto()%></th>
+                    </tr>
+                        <%}%>
+                </tbody>
             </table>
         </div>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
