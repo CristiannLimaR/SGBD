@@ -1,1 +1,5 @@
+org\cristianlima\webapp\model\Producto.class
+Main.class
 org\joaquinfigueroa\webapp\servlet\ProductoServlet.class
+org\cristianlima\webapp\util\JPAUtil.class
+org\cristianlima\webapp\util\ExceptionInitializerError.class
