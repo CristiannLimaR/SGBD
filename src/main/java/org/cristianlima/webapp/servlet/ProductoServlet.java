@@ -27,7 +27,7 @@ public class ProductoServlet extends HttpServlet {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         List<Producto> productos = ps.listarProductos();
         req.setAttribute("productos", productos);
-        req.getRequestDispatcher("./lista-Productos/lista-productos.jsp").forward(req, resp);
+        req.getRequestDispatcher("./lista-productos/lista-productos.jsp").forward(req, resp);
     }
  
     @Override
