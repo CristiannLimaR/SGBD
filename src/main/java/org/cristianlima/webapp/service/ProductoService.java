@@ -2,6 +2,7 @@
 package org.cristianlima.webapp.service;
 
 import jakarta.persistence.EntityManager;
+import jakarta.persistence.EntityTransaction;
 import java.util.List;
 import org.cristianlima.webapp.model.Producto;
 import org.cristianlima.webapp.util.JPAUtil;
@@ -22,7 +23,16 @@ public class ProductoService implements IProductoService{
 
     @Override
     public void agregarProducto(Producto producto) {
-        em.persist(producto);
+        EntityTransaction transaction = em.getTransaction();
+        try{
+            transaction.begin();
+            em.persist(producto); //agregar
+            transaction.commit();
+        }catch(Exception e){
+            if(transaction.isActive()){
+                transaction.rollback();
+            }
+        }
     }
 
     @Override
